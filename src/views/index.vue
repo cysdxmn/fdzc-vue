@@ -36,8 +36,8 @@ const router = useRouter()
                             :default-active="activeIndex"
                             class="el-menu-demo"
                             mode="horizontal"
-                            text-color="#fff"
-                            background-color="#287FB9"
+                            text-color="#287FB9"
+                            background-color="#fff"
                             active-text-color="#ffd04b"
                             @select="handleSelect"
                     >
@@ -65,27 +65,14 @@ const router = useRouter()
                 </el-col>
             </el-row>
         </el-header>
+
         <!-- Main -->
         <el-main class="main-content">
-            <!--            路由放置位置-->
+            <!-- 路由放置位置-->
             <router-view></router-view>
-            <!--            <el-container>-->
-            <!--                <el-header>-->
-            <!--                    &lt;!&ndash; Carousel &ndash;&gt;-->
-            <!--                    <div class="carousel-container">-->
-            <!--                        <el-carousel height="400px" :autoplay="true">-->
-            <!--                            <el-carousel-item v-for="item in 4" :key="item">-->
-            <!--                                <h3 class="carousel-item">{{ item }}</h3>-->
-            <!--                            </el-carousel-item>-->
-            <!--                        </el-carousel>-->
-            <!--                    </div>-->
-            <!--                </el-header>-->
-            <!--                <el-main>Main</el-main>-->
-            <!--                <el-aside width="300px">Aside</el-aside>-->
-            <!--            </el-container>-->
         </el-main>
-        <!--Footer-->
 
+        <!--Footer-->
         <el-footer class="footer">
             <el-row class="footer-row">
                 <el-col :span="15">
@@ -121,7 +108,7 @@ const router = useRouter()
     z-index: 1000;
     background: linear-gradient(to right, #2980B9, #0768B4);
     // padding: 20px;
-    height: 160px;
+    height: 170px;
 }
 
 .el-header {
@@ -171,9 +158,10 @@ const router = useRouter()
 }
 
 .el-menu-demo {
-    background: linear-gradient(to right, #2980B9, #0768B4);
+    // background: linear-gradient(to right, #2980B9, #0768B4);
     align-items: center;
     justify-content: center;
+    border-bottom: 0px;
 }
 
 .carousel-container {
